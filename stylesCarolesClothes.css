@@ -1,0 +1,130 @@
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Catalog container styling */
+catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Business container */
+business {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Item styling */
+item {
+  width: 30%;
+  margin: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image styling */
+item image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#gifShiftDress {
+  content: url("https://media.tenor.com/6vIF75MaCOoAAAAM/dress-dolores.gif");
+}
+
+#gifWraparoundSkirt {
+  content: url("https://i.pinimg.com/originals/0b/6c/df/0b6cdf358903823f8671401ebaf3ffb2.gif");
+}
+
+#gifCardigan {
+  content: url("https://media.tenor.com/Ip1a4YtmMLoAAAAM/kevinmcgarry-mcgarries.gif");
+}
+
+#gifDressHat {
+  content: url("https://media.tenor.com/HZ0WxfZCCzUAAAAM/fascinator-hat.gif");
+}
+
+/* Item name styling */
+item name {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Price styling */
+item price {
+  font-size: 1.2em;
+  color: #4caf50;
+}
+
+/* Description styling */
+item description {
+  font-size: 1em;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 1200px) {
+  item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  catalog,
+  business {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  item {
+    width: 100%;
+    padding: 15px;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  item name {
+    font-size: 1.2em;
+  }
+
+  item price {
+    font-size: 1em;
+  }
+
+  item description {
+    font-size: 0.9em;
+  }
+}

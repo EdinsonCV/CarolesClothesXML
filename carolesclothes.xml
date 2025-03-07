@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="stylesCarolesClothes.css"?>
+<!DOCTYPE catalog [
+  <!ELEMENT catalog (business+)>
+  <!ELEMENT business (item+)>
+  <!ATTLIST business name CDATA #REQUIRED>
+  <!ELEMENT item (name, price, description, image, sound)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT image EMPTY>
+  <!ATTLIST image src CDATA #REQUIRED id CDATA #IMPLIED>
+  <!ELEMENT sound EMPTY>
+  <!ATTLIST sound src CDATA #REQUIRED>
+]>
+<catalog>
+    <business name="Carole's Clothes">
+        <item>
+            <name>Shift Dress</name>
+            <price>45.00</price>
+            <description>Simple shift, available in two colours. 100% cotton</description>
+            <image id="gifShiftDress" src="shift_dress.gif"/>
+            <sound src="shift_dress_sound.mp3"/>
+        </item>
+        <item>
+            <name>Wraparound Skirt</name>
+            <price>30.00</price>
+            <description>Simple wraparound skirt, available in two colours. 100% cotton</description>
+            <image id="gifWraparoundSkirt" src="wraparound_skirt.gif"/>
+            <sound src="wraparound_skirt_sound.mp3"/>
+        </item>
+        <item>
+            <name>Cardigan</name>
+            <price>70.00</price>
+            <description>Winter cardigan, available in two colours. 100% wool</description>
+            <image id="gifCardigan" src="cardigan.gif"/>
+            <sound src="cardigan_sound.mp3"/>
+        </item>
+        <item>
+            <name>Dress Hat</name>
+            <price>20.00</price>
+            <description>Stylish dress hat, available in two colours. 100% linen</description>
+            <image id="gifDressHat" src="dress_hat.gif"/>
+            <sound src="dress_hat_sound.mp3"/>
+        </item>
+    </business>
+</catalog>
